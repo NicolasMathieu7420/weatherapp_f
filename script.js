@@ -24,7 +24,7 @@ fetch('https://weatherapp-b.vercel.app/weather')
 function updateDeleteCityEventListener() {
 	for (let i = 0; i < document.querySelectorAll('.deleteCity').length; i++) {
 		document.querySelectorAll('.deleteCity')[i].addEventListener('click', function () {
-			fetch(`weatherapp-b.vercel.app/weather/${this.id}`, { method: 'DELETE' })
+			fetch(`https://weatherapp-b.vercel.app/weather/${this.id}`, { method: 'DELETE' })
 				.then(response => response.json())
 				.then(data => {
 					if (data.result) {
