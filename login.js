@@ -2,7 +2,7 @@
 document.querySelector('#connection').addEventListener('click', function () {
     let data = {email:document.querySelector('#connectionEmail').value,
                 password:document.querySelector('#connectionPassword').value }
-    fetch(`https://weatherapp-backend-mocha-ten.vercel.app/signin`, {
+    fetch(`weatherapp-b.vercel.app/users/signin`, {
 		method: 'POST',
 		headers: {
         "Content-Type": "application/json",
@@ -24,7 +24,7 @@ document.querySelector('#register').addEventListener('click', function () {
                 password:document.querySelector('#registerPassword').value,
                 name: document.querySelector('#registerPassword').value}
     //console.log(data)
-    fetch(`https://weatherapp-backend-mocha-ten.vercel.app/signup`, {
+    fetch(`weatherapp-b.vercel.app/users/signup`, {
 		method: 'POST',
 		headers: {
         "Content-Type": "application/json",
